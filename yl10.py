@@ -12,6 +12,6 @@ age = int(input("Kui vana sa oled?: "))
 if age < 18:
     print("Liiga tatt, et autot juhtida.")
 elif age == 18:
-    print("Õnnitlused täisealiseks saamisel!")
+    print("Õnnitlused saad poest kätte!")
 elif age > 18:
     print("Võid autot juhtida.")

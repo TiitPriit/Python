@@ -5,4 +5,5 @@ animals = ["Kass", "Kala"]
 animals.append(pets)
 print(animals)
 
-print(animals[-1][-1])
+
+print("Lemmiklooma viimane täht on:",animals[-1][-1])
