@@ -11,11 +11,11 @@ while attempt > 0:
         msg = 'See on õige!'
         break
     elif user_input > num:
-        print(f'{user_input} On suurem')
+        print(f'{user_input} On Liiga Suur Paku Väiksem')
         
 
     elif user_input < num:
-        print(f'{user_input} On väiksem')
+        print(f'{user_input} On Liiga Väike Paku Suurem')
         
 
     else:
