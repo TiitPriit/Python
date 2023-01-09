@@ -82,7 +82,6 @@ def blackjack(dealer_hand, player_hand):
         play_again()
 
 def score(dealer_hand, player_hand):
-        # score function now updates to global win/loss variables
         global VÕIDUD
         global KAOTUSED
         if total(player_hand) == 21:
@@ -99,7 +98,7 @@ def score(dealer_hand, player_hand):
             KAOTUSED += 1
         elif total(dealer_hand) > 21:
             print_results(dealer_hand, player_hand)
-            print ("Diiler läks üle. You win!\n")
+            print ("Diiler läks üle. Sa võidad!\n")
             VÕIDUD += 1
         elif total(player_hand) < total(dealer_hand):
             print_results(dealer_hand, player_hand)
