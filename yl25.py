@@ -1,14 +1,15 @@
 me = {
     "first_name": "Oskar",
     "last_name": "Kallas",
-    "birth_year": "2006",
+    "birth_year": 2006,
     "place_of_living": "Leisi",
-    "dessert": "candy",
+    "dessert": "Kommid",
 }
 
-print(me.get("place_of_living"))
-print(me["place_of_living"])
+#print(me.get("place_of_living"))
+#print(me["place_of_living"])
 
-me["dessert"] = "ice_cream"
+me["dessert"] = "Jäätis"
 
-print(me)
+for k, v in me.items():
+    print(k, v)
