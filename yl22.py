@@ -24,6 +24,6 @@ while True:
         else:
             print("kivi tapab käärid! Sa kaotad.")
 
-    play_again = input("Tahad veel mängida? (j/e): ")
-    if play_again.lower() != "j":
+    play_again = input("Tahad veel mängida? (Y/N): ")
+    if play_again.lower() != "y":
         break
