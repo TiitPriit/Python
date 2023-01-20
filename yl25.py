@@ -13,7 +13,7 @@ me["dessert"] = "Jäätis"
 
 for k, v in me.items():
     print(k, v)
-
+"""
 
 
 
@@ -43,9 +43,8 @@ else:
 
 print(len(person))
 
-person["height"] = "180cm"
+person["height"] = "189cm"
 del person["birth_year"]
 
 person.clear()
-"""
 
