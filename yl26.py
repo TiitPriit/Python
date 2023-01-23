@@ -1,26 +1,10 @@
-def sales(data):
-    lines = [line.strip().split() for line in data.split("\n") if line]
+def calculate_bonus(sales_dict):
+    bonus_dict = {}
+    for employee, sales in sales_dict.items():
+        if sales > 10000:
+            bonus = (sales - 10000) * 0.1
+            bonus_dict[employee] = bonus
+    return bonus_dict
 
-    _, *revenue = zip(*lines[2:len(lines)//2])
-    _, *expenses = zip(*lines[2+len(lines)//2:])
-    
-    commission = [sum(max(0, int(r)-int(e))*.062 for r, e in zip(*data)) for data in zip(revenue, expenses)]
-
-    print(f"           {' '.join(lines[1])}")
-    print(f"Commission {' '.join([f'{value//1:>{len(name)}.0f}' for value, name in zip(commission, lines[1])])}")
-
-sales('''Revenue
-
-            Johnver Vanston Danbree Vansey  Mundyke
-Tea             190     140    1926     14      143
-Coffee          325      19     293   1491      162
-Water           682      14     852     56      659
-Milk            829     140     609    120       87
-
-Expenses
-
-            Johnver Vanston Danbree Vansey  Mundyke
-Tea             120      65     890     54      430
-Coffee          300      10      23    802      235
-Water            50     299    1290     12      145
-Milk             67     254      89    129       76''')
+sales = {'John': 15000, 'Sara': 12000, 'Bob': 9000}
+print(calculate_bonus(sales)) # {'John': 500.0, 'Sara': 200.0}
