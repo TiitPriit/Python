@@ -1,4 +1,4 @@
-bmw_models = {"M5": {"engine": "4.4L Turbocharged V8", "power": "441 kW", "torque": "750 Nm"},
+"""bmw_models = {"M5": {"engine": "4.4L Turbocharged V8", "power": "441 kW", "torque": "750 Nm"},
               "i3": {"engine": "Electric Motor", "power": "125 kW", "torque": "250 Nm"}}
 
 def add_model(model, engine, power, torque):
@@ -42,3 +42,20 @@ if model in bmw_models:
     print("Torque: ", bmw_models[model]["torque"])
 else:
     print("Model not found.")
+"""
+bmw_models = {
+    "e46 330i": {"Horsepower": 225, "Torque": 214, "Engine": "M54B30", "Cylinders": 6},
+    "e39 540i": {"Horsepower": 282, "Torque": 324, "Engine": "M62B44", "Cylinders": 8},
+    "e60 550i": {"Horsepower": 360, "Torque": 360, "Engine": "N62B48", "Cylinders": 8},
+    "e90 335i": {"Horsepower": 300, "Torque": 300, "Engine": "N54B30", "Cylinders": 6},
+    "f10 550i": {"Horsepower": 400, "Torque": 450, "Engine": "N63B44", "Cylinders": 8},
+}
+
+def bmw_info(model):
+    if model in bmw_models:
+        return bmw_models[model]
+    else:
+        return "Invalid BMW model. Please try again."
+
+model = input("Enter a BMW model (e.g. e46 330i): ")
+print(bmw_info(model))
