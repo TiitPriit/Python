@@ -1,4 +1,4 @@
-"""bmw_models = {"M5": {"engine": "4.4L Turbocharged V8", "power": "441 kW", "torque": "750 Nm"},
+bmw_models = {"M5": {"engine": "4.4L Turbocharged V8", "power": "441 kW", "torque": "750 Nm"},
               "i3": {"engine": "Electric Motor", "power": "125 kW", "torque": "250 Nm"}}
 
 def add_model(model, engine, power, torque):
@@ -60,3 +60,4 @@ def bmw_info(model):
 
 model = input("Enter a BMW model (e.g. e46 330i): ")
 print(bmw_info(model))
+"""
