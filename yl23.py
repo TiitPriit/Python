@@ -125,7 +125,7 @@ def game():
     blackjack(dealer_hand, player_hand)
     quit=False
     while not quit:
-        choice = input("Kas sa tahad [H]it, [S]tand, või [Q]uit: ").lower()
+        choice = input("Kas sa tahad [H]itida, [S]tandida, või [Q]uitida: ").lower()
         if choice == 'h':
             hit(player_hand)
             print(player_hand)
