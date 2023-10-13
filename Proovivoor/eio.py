@@ -1,4 +1,9 @@
 
+A = float(input("Sisesta A väärtus: "))
+B = float(input("Sisesta B väärtus: "))
+C = float(input("Sisesta C väärtus: "))
+D = float(input("Sisesta D väärtus: "))
+
 A, B, C, D = map(float, input().split())
 
 keep_warm_energy = C * 60  
